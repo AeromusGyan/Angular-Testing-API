@@ -1,0 +1,6 @@
+<h1>CkEditor!</h1>
+<ckeditor [editor]="Editor" [(ngModel)]="htmlData" (ready)="onReady($event)" (change)="onChange($event)"></ckeditor>
+
+{{htmlData}}
+
+<div [innerHTML]="doc"></div>
